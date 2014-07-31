@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C337AFDA198A99CD0046D6EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337AFD9198A99CD0046D6EC /* Foundation.framework */; };
+		C337AFDC198A99CD0046D6EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337AFDB198A99CD0046D6EC /* CoreGraphics.framework */; };
+		C337AFDE198A99CD0046D6EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337AFDD198A99CD0046D6EC /* UIKit.framework */; };
+		C337AFE4198A99CD0046D6EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C337AFE2198A99CD0046D6EC /* InfoPlist.strings */; };
+		C337AFE6198A99CD0046D6EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C337AFE5198A99CD0046D6EC /* main.m */; };
+		C337AFEA198A99CD0046D6EC /* AJBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C337AFE9198A99CD0046D6EC /* AJBAppDelegate.m */; };
+		C337AFEC198A99CD0046D6EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C337AFEB198A99CD0046D6EC /* Images.xcassets */; };
+		C337AFF3198A99CD0046D6EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337AFF2198A99CD0046D6EC /* XCTest.framework */; };
+		C337AFF4198A99CD0046D6EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337AFD9198A99CD0046D6EC /* Foundation.framework */; };
+		C337AFF5198A99CD0046D6EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337AFDD198A99CD0046D6EC /* UIKit.framework */; };
+		C337AFFD198A99CD0046D6EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C337AFFB198A99CD0046D6EC /* InfoPlist.strings */; };
+		C337AFFF198A99CD0046D6EC /* Penn_RegistrarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C337AFFE198A99CD0046D6EC /* Penn_RegistrarTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C337AFF6198A99CD0046D6EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C337AFCE198A99CD0046D6EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C337AFD5198A99CD0046D6EC;
+			remoteInfo = "Penn Registrar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C337AFD6198A99CD0046D6EC /* Penn Registrar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Penn Registrar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C337AFD9198A99CD0046D6EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C337AFDB198A99CD0046D6EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C337AFDD198A99CD0046D6EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C337AFE1198A99CD0046D6EC /* Penn Registrar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Penn Registrar-Info.plist"; sourceTree = "<group>"; };
+		C337AFE3198A99CD0046D6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C337AFE5198A99CD0046D6EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C337AFE7198A99CD0046D6EC /* Penn Registrar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Penn Registrar-Prefix.pch"; sourceTree = "<group>"; };
+		C337AFE8198A99CD0046D6EC /* AJBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJBAppDelegate.h; sourceTree = "<group>"; };
+		C337AFE9198A99CD0046D6EC /* AJBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJBAppDelegate.m; sourceTree = "<group>"; };
+		C337AFEB198A99CD0046D6EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C337AFF1198A99CD0046D6EC /* Penn RegistrarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Penn RegistrarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C337AFF2198A99CD0046D6EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C337AFFA198A99CD0046D6EC /* Penn RegistrarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Penn RegistrarTests-Info.plist"; sourceTree = "<group>"; };
+		C337AFFC198A99CD0046D6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C337AFFE198A99CD0046D6EC /* Penn_RegistrarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Penn_RegistrarTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C337AFD3198A99CD0046D6EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C337AFDC198A99CD0046D6EC /* CoreGraphics.framework in Frameworks */,
+				C337AFDE198A99CD0046D6EC /* UIKit.framework in Frameworks */,
+				C337AFDA198A99CD0046D6EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C337AFEE198A99CD0046D6EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C337AFF3198A99CD0046D6EC /* XCTest.framework in Frameworks */,
+				C337AFF5198A99CD0046D6EC /* UIKit.framework in Frameworks */,
+				C337AFF4198A99CD0046D6EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C337AFCD198A99CD0046D6EC = {
+			isa = PBXGroup;
+			children = (
+				C337AFDF198A99CD0046D6EC /* Penn Registrar */,
+				C337AFF8198A99CD0046D6EC /* Penn RegistrarTests */,
+				C337AFD8198A99CD0046D6EC /* Frameworks */,
+				C337AFD7198A99CD0046D6EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C337AFD7198A99CD0046D6EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C337AFD6198A99CD0046D6EC /* Penn Registrar.app */,
+				C337AFF1198A99CD0046D6EC /* Penn RegistrarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C337AFD8198A99CD0046D6EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C337AFD9198A99CD0046D6EC /* Foundation.framework */,
+				C337AFDB198A99CD0046D6EC /* CoreGraphics.framework */,
+				C337AFDD198A99CD0046D6EC /* UIKit.framework */,
+				C337AFF2198A99CD0046D6EC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C337AFDF198A99CD0046D6EC /* Penn Registrar */ = {
+			isa = PBXGroup;
+			children = (
+				C337AFE8198A99CD0046D6EC /* AJBAppDelegate.h */,
+				C337AFE9198A99CD0046D6EC /* AJBAppDelegate.m */,
+				C337AFEB198A99CD0046D6EC /* Images.xcassets */,
+				C337AFE0198A99CD0046D6EC /* Supporting Files */,
+			);
+			path = "Penn Registrar";
+			sourceTree = "<group>";
+		};
+		C337AFE0198A99CD0046D6EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C337AFE1198A99CD0046D6EC /* Penn Registrar-Info.plist */,
+				C337AFE2198A99CD0046D6EC /* InfoPlist.strings */,
+				C337AFE5198A99CD0046D6EC /* main.m */,
+				C337AFE7198A99CD0046D6EC /* Penn Registrar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C337AFF8198A99CD0046D6EC /* Penn RegistrarTests */ = {
+			isa = PBXGroup;
+			children = (
+				C337AFFE198A99CD0046D6EC /* Penn_RegistrarTests.m */,
+				C337AFF9198A99CD0046D6EC /* Supporting Files */,
+			);
+			path = "Penn RegistrarTests";
+			sourceTree = "<group>";
+		};
+		C337AFF9198A99CD0046D6EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C337AFFA198A99CD0046D6EC /* Penn RegistrarTests-Info.plist */,
+				C337AFFB198A99CD0046D6EC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C337AFD5198A99CD0046D6EC /* Penn Registrar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C337B002198A99CD0046D6EC /* Build configuration list for PBXNativeTarget "Penn Registrar" */;
+			buildPhases = (
+				C337AFD2198A99CD0046D6EC /* Sources */,
+				C337AFD3198A99CD0046D6EC /* Frameworks */,
+				C337AFD4198A99CD0046D6EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Penn Registrar";
+			productName = "Penn Registrar";
+			productReference = C337AFD6198A99CD0046D6EC /* Penn Registrar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C337AFF0198A99CD0046D6EC /* Penn RegistrarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C337B005198A99CD0046D6EC /* Build configuration list for PBXNativeTarget "Penn RegistrarTests" */;
+			buildPhases = (
+				C337AFED198A99CD0046D6EC /* Sources */,
+				C337AFEE198A99CD0046D6EC /* Frameworks */,
+				C337AFEF198A99CD0046D6EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C337AFF7198A99CD0046D6EC /* PBXTargetDependency */,
+			);
+			name = "Penn RegistrarTests";
+			productName = "Penn RegistrarTests";
+			productReference = C337AFF1198A99CD0046D6EC /* Penn RegistrarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C337AFCE198A99CD0046D6EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AJB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex Brashear";
+				TargetAttributes = {
+					C337AFF0198A99CD0046D6EC = {
+						TestTargetID = C337AFD5198A99CD0046D6EC;
+					};
+				};
+			};
+			buildConfigurationList = C337AFD1198A99CD0046D6EC /* Build configuration list for PBXProject "Penn Registrar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C337AFCD198A99CD0046D6EC;
+			productRefGroup = C337AFD7198A99CD0046D6EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C337AFD5198A99CD0046D6EC /* Penn Registrar */,
+				C337AFF0198A99CD0046D6EC /* Penn RegistrarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C337AFD4198A99CD0046D6EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C337AFE4198A99CD0046D6EC /* InfoPlist.strings in Resources */,
+				C337AFEC198A99CD0046D6EC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C337AFEF198A99CD0046D6EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C337AFFD198A99CD0046D6EC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C337AFD2198A99CD0046D6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C337AFEA198A99CD0046D6EC /* AJBAppDelegate.m in Sources */,
+				C337AFE6198A99CD0046D6EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C337AFED198A99CD0046D6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C337AFFF198A99CD0046D6EC /* Penn_RegistrarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C337AFF7198A99CD0046D6EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C337AFD5198A99CD0046D6EC /* Penn Registrar */;
+			targetProxy = C337AFF6198A99CD0046D6EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C337AFE2198A99CD0046D6EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C337AFE3198A99CD0046D6EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C337AFFB198A99CD0046D6EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C337AFFC198A99CD0046D6EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C337B000198A99CD0046D6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C337B001198A99CD0046D6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C337B003198A99CD0046D6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Penn Registrar/Penn Registrar-Prefix.pch";
+				INFOPLIST_FILE = "Penn Registrar/Penn Registrar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C337B004198A99CD0046D6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Penn Registrar/Penn Registrar-Prefix.pch";
+				INFOPLIST_FILE = "Penn Registrar/Penn Registrar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C337B006198A99CD0046D6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Penn Registrar.app/Penn Registrar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Penn Registrar/Penn Registrar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Penn RegistrarTests/Penn RegistrarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C337B007198A99CD0046D6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Penn Registrar.app/Penn Registrar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Penn Registrar/Penn Registrar-Prefix.pch";
+				INFOPLIST_FILE = "Penn RegistrarTests/Penn RegistrarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C337AFD1198A99CD0046D6EC /* Build configuration list for PBXProject "Penn Registrar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C337B000198A99CD0046D6EC /* Debug */,
+				C337B001198A99CD0046D6EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C337B002198A99CD0046D6EC /* Build configuration list for PBXNativeTarget "Penn Registrar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C337B003198A99CD0046D6EC /* Debug */,
+				C337B004198A99CD0046D6EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C337B005198A99CD0046D6EC /* Build configuration list for PBXNativeTarget "Penn RegistrarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C337B006198A99CD0046D6EC /* Debug */,
+				C337B007198A99CD0046D6EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C337AFCE198A99CD0046D6EC /* Project object */;
+}
