@@ -25,6 +25,8 @@
 		C337B010198AC8790046D6EC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337B00F198AC8790046D6EC /* QuartzCore.framework */; };
 		C337B012198AC88D0046D6EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337B011198AC88D0046D6EC /* Security.framework */; };
 		C337B014198AC90B0046D6EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337B013198AC90B0046D6EC /* SystemConfiguration.framework */; };
+		C337B017198B66D50046D6EC /* AJBCourseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B016198B66D50046D6EC /* AJBCourseDataModel.m */; };
+		C337B01A198B66E60046D6EC /* AJBCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B019198B66E60046D6EC /* AJBCourse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		C337B00F198AC8790046D6EC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C337B011198AC88D0046D6EC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C337B013198AC90B0046D6EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C337B015198B66D50046D6EC /* AJBCourseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBCourseDataModel.h; sourceTree = "<group>"; };
+		C337B016198B66D50046D6EC /* AJBCourseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBCourseDataModel.m; sourceTree = "<group>"; };
+		C337B018198B66E60046D6EC /* AJBCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBCourse.h; sourceTree = "<group>"; };
+		C337B019198B66E60046D6EC /* AJBCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBCourse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,10 @@
 				C337B009198AA2240046D6EC /* AJBSectionsTableViewController.m */,
 				C337AFE8198A99CD0046D6EC /* AJBAppDelegate.h */,
 				C337AFE9198A99CD0046D6EC /* AJBAppDelegate.m */,
+				C337B015198B66D50046D6EC /* AJBCourseDataModel.h */,
+				C337B016198B66D50046D6EC /* AJBCourseDataModel.m */,
+				C337B018198B66E60046D6EC /* AJBCourse.h */,
+				C337B019198B66E60046D6EC /* AJBCourse.m */,
 				C337AFEB198A99CD0046D6EC /* Images.xcassets */,
 				C337AFE0198A99CD0046D6EC /* Supporting Files */,
 			);
@@ -265,9 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C337B017198B66D50046D6EC /* AJBCourseDataModel.m in Sources */,
 				C337AFEA198A99CD0046D6EC /* AJBAppDelegate.m in Sources */,
 				C337B00A198AA2240046D6EC /* AJBSectionsTableViewController.m in Sources */,
 				C337AFE6198A99CD0046D6EC /* main.m in Sources */,
+				C337B01A198B66E60046D6EC /* AJBCourse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
