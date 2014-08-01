@@ -7,16 +7,30 @@
 //
 
 #import "AJBAppDelegate.h"
+#import "AJBSectionsTableViewController.h"
+#import <HockeySDK/HockeySDK.h>
 
 @implementation AJBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self setupHockey];
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+
+    AJBSectionsTableViewController *masterViewController = [[AJBSectionsTableViewController alloc] initWithNibName:nil bundle:nil];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+    self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+- (void)setupHockey {
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"1505c5ff29b9787cff775c6225cb1aaf"];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

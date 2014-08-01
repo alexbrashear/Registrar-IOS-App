@@ -19,6 +19,12 @@
 		C337AFF5198A99CD0046D6EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337AFDD198A99CD0046D6EC /* UIKit.framework */; };
 		C337AFFD198A99CD0046D6EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C337AFFB198A99CD0046D6EC /* InfoPlist.strings */; };
 		C337AFFF198A99CD0046D6EC /* Penn_RegistrarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C337AFFE198A99CD0046D6EC /* Penn_RegistrarTests.m */; };
+		C337B00A198AA2240046D6EC /* AJBSectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B009198AA2240046D6EC /* AJBSectionsTableViewController.m */; };
+		C337B00C198AC7E50046D6EC /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337B00B198AC7E50046D6EC /* HockeySDK.framework */; };
+		C337B00E198AC8660046D6EC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337B00D198AC8660046D6EC /* CoreText.framework */; };
+		C337B010198AC8790046D6EC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337B00F198AC8790046D6EC /* QuartzCore.framework */; };
+		C337B012198AC88D0046D6EC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337B011198AC88D0046D6EC /* Security.framework */; };
+		C337B014198AC90B0046D6EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337B013198AC90B0046D6EC /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,13 @@
 		C337AFFA198A99CD0046D6EC /* Penn RegistrarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Penn RegistrarTests-Info.plist"; sourceTree = "<group>"; };
 		C337AFFC198A99CD0046D6EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C337AFFE198A99CD0046D6EC /* Penn_RegistrarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Penn_RegistrarTests.m; sourceTree = "<group>"; };
+		C337B008198AA2240046D6EC /* AJBSectionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBSectionsTableViewController.h; sourceTree = "<group>"; };
+		C337B009198AA2240046D6EC /* AJBSectionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBSectionsTableViewController.m; sourceTree = "<group>"; };
+		C337B00B198AC7E50046D6EC /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = "HockeySDK-iOS/HockeySDK.embeddedframework/HockeySDK.framework"; sourceTree = "<group>"; };
+		C337B00D198AC8660046D6EC /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		C337B00F198AC8790046D6EC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C337B011198AC88D0046D6EC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C337B013198AC90B0046D6EC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C337B014198AC90B0046D6EC /* SystemConfiguration.framework in Frameworks */,
+				C337B012198AC88D0046D6EC /* Security.framework in Frameworks */,
+				C337B010198AC8790046D6EC /* QuartzCore.framework in Frameworks */,
+				C337B00E198AC8660046D6EC /* CoreText.framework in Frameworks */,
+				C337B00C198AC7E50046D6EC /* HockeySDK.framework in Frameworks */,
 				C337AFDC198A99CD0046D6EC /* CoreGraphics.framework in Frameworks */,
 				C337AFDE198A99CD0046D6EC /* UIKit.framework in Frameworks */,
 				C337AFDA198A99CD0046D6EC /* Foundation.framework in Frameworks */,
@@ -96,6 +114,11 @@
 		C337AFD8198A99CD0046D6EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C337B013198AC90B0046D6EC /* SystemConfiguration.framework */,
+				C337B011198AC88D0046D6EC /* Security.framework */,
+				C337B00F198AC8790046D6EC /* QuartzCore.framework */,
+				C337B00D198AC8660046D6EC /* CoreText.framework */,
+				C337B00B198AC7E50046D6EC /* HockeySDK.framework */,
 				C337AFD9198A99CD0046D6EC /* Foundation.framework */,
 				C337AFDB198A99CD0046D6EC /* CoreGraphics.framework */,
 				C337AFDD198A99CD0046D6EC /* UIKit.framework */,
@@ -107,6 +130,8 @@
 		C337AFDF198A99CD0046D6EC /* Penn Registrar */ = {
 			isa = PBXGroup;
 			children = (
+				C337B008198AA2240046D6EC /* AJBSectionsTableViewController.h */,
+				C337B009198AA2240046D6EC /* AJBSectionsTableViewController.m */,
 				C337AFE8198A99CD0046D6EC /* AJBAppDelegate.h */,
 				C337AFE9198A99CD0046D6EC /* AJBAppDelegate.m */,
 				C337AFEB198A99CD0046D6EC /* Images.xcassets */,
@@ -241,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C337AFEA198A99CD0046D6EC /* AJBAppDelegate.m in Sources */,
+				C337B00A198AA2240046D6EC /* AJBSectionsTableViewController.m in Sources */,
 				C337AFE6198A99CD0046D6EC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +384,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Penn Registrar/Penn Registrar-Prefix.pch";
 				INFOPLIST_FILE = "Penn Registrar/Penn Registrar-Info.plist";
@@ -371,6 +401,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Penn Registrar/Penn Registrar-Prefix.pch";
 				INFOPLIST_FILE = "Penn Registrar/Penn Registrar-Info.plist";
