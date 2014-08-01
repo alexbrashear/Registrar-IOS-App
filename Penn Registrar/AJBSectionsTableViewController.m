@@ -7,6 +7,7 @@
 //
 
 #import "AJBSectionsTableViewController.h"
+#import "AJBCourseDataModel.h"
 
 @interface AJBSectionsTableViewController ()
 
@@ -18,6 +19,9 @@
 {
     self = [super initWithStyle:style];
     if (self) {
+        AJBCourseDataModel *model = [[AJBCourseDataModel alloc] init];
+        [model retrieveCourseInformationWithCompletion];
+        
         // Custom initialization
     }
     return self;

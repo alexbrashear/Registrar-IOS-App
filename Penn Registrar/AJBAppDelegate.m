@@ -9,6 +9,8 @@
 #import "AJBAppDelegate.h"
 #import "AJBSectionsTableViewController.h"
 #import <HockeySDK/HockeySDK.h>
+#import "AJBCourseDataModel.h"
+
 
 @implementation AJBAppDelegate
 
@@ -23,6 +25,9 @@
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
+    
+    AJBCourseDataModel *model = [[AJBCourseDataModel alloc] init];
+    [model retrieveCourseInformationWithCompletion];
     
     return YES;
 }

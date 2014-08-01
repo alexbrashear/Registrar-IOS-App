@@ -10,4 +10,7 @@
 
 @interface AJBCourseDataModel : NSObject
 
+- (void)retrieveCourseInformationWithCompletion;
+
+
 @end
