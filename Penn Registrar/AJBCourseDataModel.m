@@ -7,6 +7,7 @@
 //
 
 #import "AJBCourseDataModel.h"
+#import "AJBAPIMap.h"
 
 NSString * const AJBBearerHeaderKey = @"Authorization-Bearer";
 NSString * const AJBTokenHeaderKey = @"Authorization-Token";
@@ -28,6 +29,7 @@ NSString * const AJBCourseSectionSearchParametersURL = @"https://esb.isc-seo.upe
     [NSURLConnection sendAsynchronousRequest:urlrequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         
         NSMutableDictionary *profileDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+        AJBAPIMap *apiMap = [[AJBAPIMap alloc] initWithDictionary:profileDictionary];
         //reloadTableviewBlock();
     }];
 }

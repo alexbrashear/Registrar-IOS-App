@@ -27,6 +27,8 @@
 		C337B014198AC90B0046D6EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C337B013198AC90B0046D6EC /* SystemConfiguration.framework */; };
 		C337B017198B66D50046D6EC /* AJBCourseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B016198B66D50046D6EC /* AJBCourseDataModel.m */; };
 		C337B01A198B66E60046D6EC /* AJBCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B019198B66E60046D6EC /* AJBCourse.m */; };
+		C337B01E198C4E5D0046D6EC /* AJBSection.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B01D198C4E5D0046D6EC /* AJBSection.m */; };
+		C337B021198C4ED00046D6EC /* AJBAPIMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B020198C4ED00046D6EC /* AJBAPIMap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		C337B016198B66D50046D6EC /* AJBCourseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBCourseDataModel.m; sourceTree = "<group>"; };
 		C337B018198B66E60046D6EC /* AJBCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBCourse.h; sourceTree = "<group>"; };
 		C337B019198B66E60046D6EC /* AJBCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBCourse.m; sourceTree = "<group>"; };
+		C337B01C198C4E5D0046D6EC /* AJBSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBSection.h; sourceTree = "<group>"; };
+		C337B01D198C4E5D0046D6EC /* AJBSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBSection.m; sourceTree = "<group>"; };
+		C337B01F198C4ED00046D6EC /* AJBAPIMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBAPIMap.h; sourceTree = "<group>"; };
+		C337B020198C4ED00046D6EC /* AJBAPIMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBAPIMap.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +148,7 @@
 				C337AFE9198A99CD0046D6EC /* AJBAppDelegate.m */,
 				C337B015198B66D50046D6EC /* AJBCourseDataModel.h */,
 				C337B016198B66D50046D6EC /* AJBCourseDataModel.m */,
-				C337B018198B66E60046D6EC /* AJBCourse.h */,
-				C337B019198B66E60046D6EC /* AJBCourse.m */,
+				C337B01B198C4E190046D6EC /* model */,
 				C337AFEB198A99CD0046D6EC /* Images.xcassets */,
 				C337AFE0198A99CD0046D6EC /* Supporting Files */,
 			);
@@ -177,6 +182,19 @@
 				C337AFFB198A99CD0046D6EC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C337B01B198C4E190046D6EC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C337B018198B66E60046D6EC /* AJBCourse.h */,
+				C337B019198B66E60046D6EC /* AJBCourse.m */,
+				C337B01C198C4E5D0046D6EC /* AJBSection.h */,
+				C337B01D198C4E5D0046D6EC /* AJBSection.m */,
+				C337B01F198C4ED00046D6EC /* AJBAPIMap.h */,
+				C337B020198C4ED00046D6EC /* AJBAPIMap.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,8 +296,10 @@
 				C337B017198B66D50046D6EC /* AJBCourseDataModel.m in Sources */,
 				C337AFEA198A99CD0046D6EC /* AJBAppDelegate.m in Sources */,
 				C337B00A198AA2240046D6EC /* AJBSectionsTableViewController.m in Sources */,
+				C337B01E198C4E5D0046D6EC /* AJBSection.m in Sources */,
 				C337AFE6198A99CD0046D6EC /* main.m in Sources */,
 				C337B01A198B66E60046D6EC /* AJBCourse.m in Sources */,
+				C337B021198C4ED00046D6EC /* AJBAPIMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
