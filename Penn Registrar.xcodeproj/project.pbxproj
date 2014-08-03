@@ -31,6 +31,7 @@
 		C337B021198C4ED00046D6EC /* AJBAPIMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B020198C4ED00046D6EC /* AJBAPIMap.m */; };
 		C36FB912198DC27300B82B58 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36FB911198DC27300B82B58 /* CoreData.framework */; };
 		C36FB918198DF0B600B82B58 /* AJBCoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C36FB917198DF0B600B82B58 /* AJBCoursesTableViewController.m */; };
+		C38D95C4198E94B000AFA231 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C38D95C2198E94B000AFA231 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		C36FB911198DC27300B82B58 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C36FB916198DF0B600B82B58 /* AJBCoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBCoursesTableViewController.h; sourceTree = "<group>"; };
 		C36FB917198DF0B600B82B58 /* AJBCoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBCoursesTableViewController.m; sourceTree = "<group>"; };
+		C38D95C3198E94B000AFA231 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 		C337B01B198C4E190046D6EC /* model */ = {
 			isa = PBXGroup;
 			children = (
+				C38D95C2198E94B000AFA231 /* Model.xcdatamodeld */,
 				C337B018198B66E60046D6EC /* AJBCourse.h */,
 				C337B019198B66E60046D6EC /* AJBCourse.m */,
 				C337B01C198C4E5D0046D6EC /* AJBSection.h */,
@@ -307,6 +310,7 @@
 				C36FB918198DF0B600B82B58 /* AJBCoursesTableViewController.m in Sources */,
 				C337B00A198AA2240046D6EC /* AJBSectionsTableViewController.m in Sources */,
 				C337B01E198C4E5D0046D6EC /* AJBSection.m in Sources */,
+				C38D95C4198E94B000AFA231 /* Model.xcdatamodeld in Sources */,
 				C337AFE6198A99CD0046D6EC /* main.m in Sources */,
 				C337B01A198B66E60046D6EC /* AJBCourse.m in Sources */,
 				C337B021198C4ED00046D6EC /* AJBAPIMap.m in Sources */,
@@ -526,6 +530,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C38D95C2198E94B000AFA231 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C38D95C3198E94B000AFA231 /* Model.xcdatamodel */,
+			);
+			currentVersion = C38D95C3198E94B000AFA231 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C337AFCE198A99CD0046D6EC /* Project object */;
 }
