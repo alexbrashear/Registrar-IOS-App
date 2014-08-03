@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>237FFD9D-D997-46F7-9CFB-B58D97430A46</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Penn Registrar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>956D3B56-537C-4502-AB9D-9D00F9DF5C77</key>
+		<string>ssh://github.com/alexbrashear/Registrar-IOS-App.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Penn Registrar.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>956D3B56-537C-4502-AB9D-9D00F9DF5C77</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/alexbrashear/Registrar-IOS-App.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>956D3B56-537C-4502-AB9D-9D00F9DF5C77</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>956D3B56-537C-4502-AB9D-9D00F9DF5C77</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Penn Registrar</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -10,19 +10,18 @@
 #import "AJBCourseDataModel.h"
 
 @interface AJBSectionsTableViewController ()
-
+@property (nonatomic, strong) AJBCourseDataModel *courseDataModel;
 @end
 
 @implementation AJBSectionsTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        AJBCourseDataModel *model = [[AJBCourseDataModel alloc] init];
-        [model retrieveCourseInformationWithCompletion];
-        
-        // Custom initialization
+        self.courseDataModel = [[AJBCourseDataModel alloc] init];
+        [self.courseDataModel retrieveCourseInformationWithCompletion:^{
+            [self.tableView reloadData];
+        }];
     }
     return self;
 }
@@ -31,6 +30,8 @@
 {
     [super viewDidLoad];
     
+
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -48,28 +49,32 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.courseDataModel numberOfDepartments];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"Cell";
     
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    }
     
+    cell.textLabel.text = [self.courseDataModel departmentAtIndex:indexPath.row];
+        
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

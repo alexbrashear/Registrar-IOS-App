@@ -19,6 +19,8 @@
 - (NSString *)termForkey:(NSString *)key;
 - (NSString *)activityForkey:(NSString *)key;
 - (NSString *)searchParametersURLForKey:(NSString *)key;
+- (NSArray *)departments;
+
 
 
 @end

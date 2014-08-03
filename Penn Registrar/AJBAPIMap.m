@@ -69,4 +69,8 @@ NSString * const searchParametersKey = @"acceptable_search_url_parameters_map";
     return [self.searchParametersMap objectForKey:key];
 }
 
+- (NSArray *)departments {
+    return [self.departmentMap allKeys];
+}
+
 @end

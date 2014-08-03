@@ -29,6 +29,7 @@
 		C337B01A198B66E60046D6EC /* AJBCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B019198B66E60046D6EC /* AJBCourse.m */; };
 		C337B01E198C4E5D0046D6EC /* AJBSection.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B01D198C4E5D0046D6EC /* AJBSection.m */; };
 		C337B021198C4ED00046D6EC /* AJBAPIMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B020198C4ED00046D6EC /* AJBAPIMap.m */; };
+		C36FB912198DC27300B82B58 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36FB911198DC27300B82B58 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		C337B01D198C4E5D0046D6EC /* AJBSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBSection.m; sourceTree = "<group>"; };
 		C337B01F198C4ED00046D6EC /* AJBAPIMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBAPIMap.h; sourceTree = "<group>"; };
 		C337B020198C4ED00046D6EC /* AJBAPIMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBAPIMap.m; sourceTree = "<group>"; };
+		C36FB911198DC27300B82B58 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36FB912198DC27300B82B58 /* CoreData.framework in Frameworks */,
 				C337B014198AC90B0046D6EC /* SystemConfiguration.framework in Frameworks */,
 				C337B012198AC88D0046D6EC /* Security.framework in Frameworks */,
 				C337B010198AC8790046D6EC /* QuartzCore.framework in Frameworks */,
@@ -126,6 +129,7 @@
 		C337AFD8198A99CD0046D6EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C36FB911198DC27300B82B58 /* CoreData.framework */,
 				C337B013198AC90B0046D6EC /* SystemConfiguration.framework */,
 				C337B011198AC88D0046D6EC /* Security.framework */,
 				C337B00F198AC8790046D6EC /* QuartzCore.framework */,
@@ -504,6 +508,7 @@
 				C337B004198A99CD0046D6EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C337B005198A99CD0046D6EC /* Build configuration list for PBXNativeTarget "Penn RegistrarTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +517,7 @@
 				C337B007198A99CD0046D6EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
