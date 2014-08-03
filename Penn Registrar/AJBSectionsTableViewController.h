@@ -10,4 +10,6 @@
 
 @interface AJBSectionsTableViewController : UITableViewController
 
+- (void)endUpdates;
+
 @end

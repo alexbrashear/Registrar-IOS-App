@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Penn Registrar/AJBCourseDataModel.m"
-            timestampString = "428657154.685235"
+            timestampString = "428734805.258515"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "+retrieveCourseInformationWithCompletion:"
             landmarkType = "5">
          </BreakpointContent>

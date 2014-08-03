@@ -18,10 +18,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.courseDataModel = [[AJBCourseDataModel alloc] init];
-        [self.courseDataModel retrieveCourseInformationWithCompletion:^{
-            [self.tableView reloadData];
-        }];
+
     }
     return self;
 }
@@ -29,14 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-
-
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,7 +48,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.courseDataModel numberOfDepartments];
+    return [AJBCourseDataModel numberOfDepartments];
 }
 
 
@@ -70,9 +62,13 @@
         cell.selectionStyle = UITableViewCellSelectionStyleGray;
     }
     
-    cell.textLabel.text = [self.courseDataModel departmentAtIndex:indexPath.row];
+    cell.textLabel.text = [AJBCourseDataModel departmentAtIndex:indexPath.row];
         
     return cell;
+}
+
+- (void)endUpdates {
+    [self.tableView reloadData];
 }
 
 

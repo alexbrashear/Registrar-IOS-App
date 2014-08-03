@@ -9,6 +9,7 @@
 #import "AJBAppDelegate.h"
 #import "AJBSectionsTableViewController.h"
 #import <HockeySDK/HockeySDK.h>
+#import "AJBCourseDataModel.h"
 
 
 @implementation AJBAppDelegate
@@ -16,11 +17,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self setupHockey];
+    AJBSectionsTableViewController *masterViewController = [[AJBSectionsTableViewController alloc] initWithNibName:nil bundle:nil];
+    [self fetchDepartmentsInBackground:masterViewController];
     
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    AJBSectionsTableViewController *masterViewController = [[AJBSectionsTableViewController alloc] initWithNibName:nil bundle:nil];
+    
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
@@ -59,6 +62,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+# pragma mark - setup in background
+
+- (void)fetchDepartmentsInBackground:(AJBSectionsTableViewController *)sectionsViewController {
+    [AJBCourseDataModel retrieveCourseInformationWithCompletion:^{
+        [sectionsViewController endUpdates];
+    }];
 }
 
 @end
