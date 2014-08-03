@@ -10,9 +10,9 @@
 
 @interface AJBCourseDataModel : NSObject
 
-- (void)retrieveCourseInformationWithCompletion:(void (^) (void))reloadTableviewBlock;
-- (NSInteger)numberOfDepartments;
-- (NSString *)departmentAtIndex:(NSInteger)index;
++ (void)retrieveCourseInformationWithCompletion:(void (^) (void))reloadTableviewBlock;
++ (NSInteger)numberOfDepartments;
++ (NSString *)departmentAtIndex:(NSInteger)index;
 
 
 

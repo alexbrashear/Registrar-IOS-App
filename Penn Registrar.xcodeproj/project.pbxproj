@@ -30,6 +30,7 @@
 		C337B01E198C4E5D0046D6EC /* AJBSection.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B01D198C4E5D0046D6EC /* AJBSection.m */; };
 		C337B021198C4ED00046D6EC /* AJBAPIMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B020198C4ED00046D6EC /* AJBAPIMap.m */; };
 		C36FB912198DC27300B82B58 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36FB911198DC27300B82B58 /* CoreData.framework */; };
+		C36FB918198DF0B600B82B58 /* AJBCoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C36FB917198DF0B600B82B58 /* AJBCoursesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		C337B01F198C4ED00046D6EC /* AJBAPIMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBAPIMap.h; sourceTree = "<group>"; };
 		C337B020198C4ED00046D6EC /* AJBAPIMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBAPIMap.m; sourceTree = "<group>"; };
 		C36FB911198DC27300B82B58 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C36FB916198DF0B600B82B58 /* AJBCoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBCoursesTableViewController.h; sourceTree = "<group>"; };
+		C36FB917198DF0B600B82B58 /* AJBCoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBCoursesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 				C337AFE9198A99CD0046D6EC /* AJBAppDelegate.m */,
 				C337B015198B66D50046D6EC /* AJBCourseDataModel.h */,
 				C337B016198B66D50046D6EC /* AJBCourseDataModel.m */,
+				C36FB916198DF0B600B82B58 /* AJBCoursesTableViewController.h */,
+				C36FB917198DF0B600B82B58 /* AJBCoursesTableViewController.m */,
 				C337B01B198C4E190046D6EC /* model */,
 				C337AFEB198A99CD0046D6EC /* Images.xcassets */,
 				C337AFE0198A99CD0046D6EC /* Supporting Files */,
@@ -299,6 +304,7 @@
 			files = (
 				C337B017198B66D50046D6EC /* AJBCourseDataModel.m in Sources */,
 				C337AFEA198A99CD0046D6EC /* AJBAppDelegate.m in Sources */,
+				C36FB918198DF0B600B82B58 /* AJBCoursesTableViewController.m in Sources */,
 				C337B00A198AA2240046D6EC /* AJBSectionsTableViewController.m in Sources */,
 				C337B01E198C4E5D0046D6EC /* AJBSection.m in Sources */,
 				C337AFE6198A99CD0046D6EC /* main.m in Sources */,

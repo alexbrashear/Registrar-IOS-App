@@ -11,7 +11,7 @@
 
 @interface AJBCourseDataModel()
 
-@property (nonatomic, strong) NSMutableArray *departments;
+//@property (nonatomic, strong) NSArray *departments;
 
 @end
 
@@ -25,14 +25,16 @@ NSString * const AJBResultDataKey = @"result_data";
 
 NSString * const AJBCourseSectionSearchParametersURL = @"https://esb.isc-seo.upenn.edu/8091/open_data/course_section_search_parameters/";
 
+static NSArray *departments;
+
 @implementation AJBCourseDataModel
 
 - (id)init {
-    self.departments = [[NSMutableArray alloc] init];
+    departments = [[NSMutableArray alloc] init];
     return self;
 }
 
-- (void)retrieveCourseInformationWithCompletion:(void (^) (void))reloadTableviewBlock {
++ (void)retrieveCourseInformationWithCompletion:(void (^) (void))reloadTableviewBlock {
     NSMutableURLRequest *urlrequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:AJBCourseSectionSearchParametersURL]];
     [urlrequest setValue:AJBBearerHeaderField forHTTPHeaderField:AJBBearerHeaderKey];
     [urlrequest setValue:AJBTokenHeaderField forHTTPHeaderField:AJBTokenHeaderKey];
@@ -44,18 +46,18 @@ NSString * const AJBCourseSectionSearchParametersURL = @"https://esb.isc-seo.upe
         NSMutableDictionary *profileDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
         AJBAPIMap *apiMap = [[AJBAPIMap alloc] initWithDictionary:[[profileDictionary objectForKey:AJBResultDataKey] lastObject]];
         
-        self.departments = [NSMutableArray arrayWithArray:[apiMap departments]];
-        
+        departments = [[apiMap departments] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+
         reloadTableviewBlock();
     }];
 }
 
-- (NSInteger)numberOfDepartments {
-    return [self.departments count];
++ (NSInteger)numberOfDepartments {
+    return [departments count];
 }
 
-- (NSString *)departmentAtIndex:(NSInteger)index {
-    return [self.departments objectAtIndex:index];
++ (NSString *)departmentAtIndex:(NSInteger)index {
+    return [departments objectAtIndex:index];
 }
 
 @end
