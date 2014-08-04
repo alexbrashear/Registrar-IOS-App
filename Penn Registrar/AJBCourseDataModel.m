@@ -8,6 +8,8 @@
 
 #import "AJBCourseDataModel.h"
 #import "AJBAPIMap.h"
+#import "AJBDepartment.h"
+#import "AJBWebRequestManager.h"
 
 @interface AJBCourseDataModel()
 
@@ -50,13 +52,19 @@ static NSArray *departments;
         departments = [[apiMap departments] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
 
         //reloadTableviewBlock();
-        NSMutableDictionary *deptDictionary = [NSMutableDictionary dictionary];
+        NSMutableArray *depts = [[NSMutableArray alloc] init];
         
         for (NSString *dept in [apiMap departments]) {
+            NSMutableDictionary *deptDictionary = [NSMutableDictionary dictionary];
+            deptDictionary[[AJBDepartment fullNameKey]] = [apiMap departmentForkey:[AJBDepartment fullNameKey]];
+            deptDictionary[[AJBDepartment abbrNameKey]] = dept;
             
+            [depts addObject:deptDictionary];
         }
     }];
 }
+
+- (void)
 
 + (NSInteger)numberOfDepartments {
     return [departments count];

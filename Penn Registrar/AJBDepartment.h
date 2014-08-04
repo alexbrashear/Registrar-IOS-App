@@ -13,4 +13,6 @@
 @property (nonatomic, retain) NSString *fullName;
 @property (nonatomic, retain) NSString *abbrName;
 
++ (NSString *)fullNameKey;
++ (NSString *)abbrNameKey;
 @end
