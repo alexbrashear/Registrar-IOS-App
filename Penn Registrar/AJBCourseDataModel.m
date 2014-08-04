@@ -24,6 +24,7 @@ NSString * const AJBTokenHeaderField = @"1vkd6m32bo1polkdfup713dmte";
 NSString * const AJBResultDataKey = @"result_data";
 
 NSString * const AJBCourseSectionSearchParametersURL = @"https://esb.isc-seo.upenn.edu/8091/open_data/course_section_search_parameters/";
+// https://esb.isc-seo.upenn.edu/8091/open_data/course_info/ACCT/?page_number=2
 
 static NSArray *departments;
 
@@ -48,7 +49,12 @@ static NSArray *departments;
         
         departments = [[apiMap departments] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
 
-        reloadTableviewBlock();
+        //reloadTableviewBlock();
+        NSMutableDictionary *deptDictionary = [NSMutableDictionary dictionary];
+        
+        for (NSString *dept in [apiMap departments]) {
+            
+        }
     }];
 }
 
