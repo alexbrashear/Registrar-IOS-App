@@ -64,7 +64,6 @@ static NSArray *departments;
     }];
 }
 
-- (void)
 
 + (NSInteger)numberOfDepartments {
     return [departments count];

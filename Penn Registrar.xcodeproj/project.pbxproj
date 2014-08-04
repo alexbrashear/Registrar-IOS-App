@@ -29,6 +29,7 @@
 		C337B01A198B66E60046D6EC /* AJBCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B019198B66E60046D6EC /* AJBCourse.m */; };
 		C337B021198C4ED00046D6EC /* AJBAPIMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C337B020198C4ED00046D6EC /* AJBAPIMap.m */; };
 		C33D559D199011B400ADD681 /* AJBWebRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C33D559C199011B400ADD681 /* AJBWebRequestManager.m */; };
+		C33D55A01990176100ADD681 /* AJBCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C33D559F1990176100ADD681 /* AJBCoreDataManager.m */; };
 		C36FB912198DC27300B82B58 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36FB911198DC27300B82B58 /* CoreData.framework */; };
 		C36FB918198DF0B600B82B58 /* AJBCoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C36FB917198DF0B600B82B58 /* AJBCoursesTableViewController.m */; };
 		C38D95C4198E94B000AFA231 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C38D95C2198E94B000AFA231 /* Model.xcdatamodeld */; };
@@ -77,6 +78,8 @@
 		C337B020198C4ED00046D6EC /* AJBAPIMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBAPIMap.m; sourceTree = "<group>"; };
 		C33D559B199011B400ADD681 /* AJBWebRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBWebRequestManager.h; sourceTree = "<group>"; };
 		C33D559C199011B400ADD681 /* AJBWebRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBWebRequestManager.m; sourceTree = "<group>"; };
+		C33D559E1990176100ADD681 /* AJBCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBCoreDataManager.h; sourceTree = "<group>"; };
+		C33D559F1990176100ADD681 /* AJBCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBCoreDataManager.m; sourceTree = "<group>"; };
 		C36FB911198DC27300B82B58 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C36FB916198DF0B600B82B58 /* AJBCoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJBCoursesTableViewController.h; sourceTree = "<group>"; };
 		C36FB917198DF0B600B82B58 /* AJBCoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJBCoursesTableViewController.m; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 				C337B009198AA2240046D6EC /* AJBSectionsTableViewController.m */,
 				C337AFE8198A99CD0046D6EC /* AJBAppDelegate.h */,
 				C337AFE9198A99CD0046D6EC /* AJBAppDelegate.m */,
+				C33D559E1990176100ADD681 /* AJBCoreDataManager.h */,
+				C33D559F1990176100ADD681 /* AJBCoreDataManager.m */,
 				C337B015198B66D50046D6EC /* AJBCourseDataModel.h */,
 				C337B016198B66D50046D6EC /* AJBCourseDataModel.m */,
 				C33D559B199011B400ADD681 /* AJBWebRequestManager.h */,
@@ -310,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33D55A01990176100ADD681 /* AJBCoreDataManager.m in Sources */,
 				C337B017198B66D50046D6EC /* AJBCourseDataModel.m in Sources */,
 				C337AFEA198A99CD0046D6EC /* AJBAppDelegate.m in Sources */,
 				C36FB918198DF0B600B82B58 /* AJBCoursesTableViewController.m in Sources */,
