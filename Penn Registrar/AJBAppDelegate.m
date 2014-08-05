@@ -11,19 +11,20 @@
 #import <HockeySDK/HockeySDK.h>
 #import "AJBCourseDataModel.h"
 #import "AJBCoreDataManager.h"
+#import "AJBCourseDataFetcher.h"
+
 
 @implementation AJBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self setupHockey];
-    AJBSectionsTableViewController *masterViewController = [[AJBSectionsTableViewController alloc] initWithNibName:nil bundle:nil];
-    [self fetchDepartmentsInBackground:masterViewController];
+    [self setUpCoreDataInBackground];
     
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    
+    AJBSectionsTableViewController *masterViewController = [[AJBSectionsTableViewController alloc] initWithNibName:nil bundle:nil];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
@@ -65,11 +66,9 @@
 
 # pragma mark - setup in background
 
-- (void)fetchDepartmentsInBackground:(AJBSectionsTableViewController *)sectionsViewController {
-    [AJBCourseDataModel retrieveCourseInformationWithCompletion:^{
-        [sectionsViewController endUpdates];
-    }];
-    
+- (void)setUpCoreDataInBackground {
+    [AJBCourseDataFetcher retrieveDepartmentData];
+    [AJBCourseDataFetcher retrieveCourseData];
 }
 
 

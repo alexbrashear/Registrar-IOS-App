@@ -15,4 +15,6 @@
 
 + (NSString *)fullNameKey;
 + (NSString *)abbrNameKey;
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary managedObjectContext:(NSManagedObjectContext *)context;
+
 @end
