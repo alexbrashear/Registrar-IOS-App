@@ -22,6 +22,8 @@ NSString * const AJBTokenHeaderField = @"1vkd6m32bo1polkdfup713dmte";
 NSString * const AJBResultDataKey = @"result_data";
 
 NSString * const AJBCourseSectionSearchParametersURL = @"https://esb.isc-seo.upenn.edu/8091/open_data/course_section_search_parameters/";
+NSString * const AJBCourseCatalogURL = @"https://esb.isc-seo.upenn.edu/8091/open_data/course_info/";
+NSString * const AJBPageNumber = @"/?page_number=";
 
 @implementation AJBCourseDataFetcher
 
@@ -45,6 +47,7 @@ NSString * const AJBCourseSectionSearchParametersURL = @"https://esb.isc-seo.upe
             [depts addObject:deptDictionary];
         }
         [AJBCourseDataFetcher setupDepartmentsFromArray:depts];
+        [self retrieveCourseDataFromDepartment:departments];
     }];
 }
 
@@ -59,8 +62,22 @@ NSString * const AJBCourseSectionSearchParametersURL = @"https://esb.isc-seo.upe
     }
 }
 
-+ (void)retrieveCourseData {
++ (void)retrieveCourseDataFromDepartment:(NSArray *)departments {
+    NSInteger pageNumber = 10;
     
+    for (NSString *department in departments) {
+        while (YES) {
+            NSString *url = [NSString stringWithFormat:@"%@%@%@%d", AJBCourseCatalogURL, department, AJBPageNumber, pageNumber];
+            
+            NSMutableURLRequest *urlrequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
+            [urlrequest setValue:AJBBearerHeaderField forHTTPHeaderField:AJBBearerHeaderKey];
+            [urlrequest setValue:AJBTokenHeaderField forHTTPHeaderField:AJBTokenHeaderKey];
+            
+            [AJBWebRequestManager retrieveDataWithAsyncURLRequest:urlrequest AndCompletion:^(NSDictionary *profileDictionary){
+                NSLog(@"asdfasdf");
+            }];
+        }
+    }
 }
 
 @end

@@ -21,4 +21,17 @@
     }];
 }
 
++ (NSDictionary *)retrieveDictionaryWithSynchronousRequest:(NSURLRequest *)urlrequest {
+    
+    NSURLResponse *urlResponse;
+    NSError *urlError;
+    NSError *jsonError;
+    
+    NSData *urlData = [NSURLConnection sendSynchronousRequest:urlrequest returningResponse:&urlResponse error:&urlError];
+    
+    NSDictionary *profileDIctionary = [NSJSONSerialization JSONObjectWithData:urlData options:NSJSONReadingMutableLeaves error:&jsonError];
+    
+    return profileDIctionary;
+}
+
 @end
