@@ -9,7 +9,6 @@
 #import "AJBAppDelegate.h"
 #import "AJBSectionsTableViewController.h"
 #import <HockeySDK/HockeySDK.h>
-#import "AJBCourseDataModel.h"
 #import "AJBCoreDataManager.h"
 #import "AJBCourseDataFetcher.h"
 
@@ -68,7 +67,7 @@
 
 - (void)setUpCoreDataInBackground {
     [AJBCourseDataFetcher retrieveDepartmentData];
-    [AJBCourseDataFetcher retrieveCourseData];
+//    [AJBCourseDataFetcher retrieveCourseData];
 }
 
 

@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AJBSectionsTableViewController : UITableViewController
+@interface AJBSectionsTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
-- (void)endUpdates;
 
 @end

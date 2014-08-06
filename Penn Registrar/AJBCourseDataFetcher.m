@@ -39,7 +39,7 @@ NSString * const AJBCourseSectionSearchParametersURL = @"https://esb.isc-seo.upe
         
         for (NSString *dept in [apiMap departments]) {
             NSMutableDictionary *deptDictionary = [NSMutableDictionary dictionary];
-            deptDictionary[[AJBDepartment fullNameKey]] = [apiMap departmentForkey:[AJBDepartment fullNameKey]];
+            deptDictionary[[AJBDepartment fullNameKey]] = [apiMap departmentForkey:dept];
             deptDictionary[[AJBDepartment abbrNameKey]] = dept;
             
             [depts addObject:deptDictionary];
@@ -52,6 +52,10 @@ NSString * const AJBCourseSectionSearchParametersURL = @"https://esb.isc-seo.upe
     NSManagedObjectContext *context = [[AJBCoreDataManager sharedManager] managedObjectContext];
     for (NSDictionary *dict in depts) {
         [[AJBDepartment alloc] initWithDictionary:dict managedObjectContext:context];
+    }
+    NSError *error;
+    if (![context save:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
     }
 }
 
