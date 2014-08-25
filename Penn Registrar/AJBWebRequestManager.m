@@ -8,6 +8,12 @@
 
 #import "AJBWebRequestManager.h"
 
+NSString * const AJBBearerHeaderKey = @"Authorization-Bearer";
+NSString * const AJBTokenHeaderKey = @"Authorization-Token";
+
+NSString * const AJBBearerHeaderField = @"UPENN_OD_emud_1000683";
+NSString * const AJBTokenHeaderField = @"1vkd6m32bo1polkdfup713dmte";
+
 @implementation AJBWebRequestManager
 
 + (void)retrieveDataWithAsyncURLRequest:(NSURLRequest *)urlrequest AndCompletion:(void (^) (NSDictionary *))block {
@@ -23,8 +29,7 @@
 
 + (NSDictionary *)retrieveDictionaryWithSynchronousRequest:(NSURLRequest *)urlrequest {
     
-    NSURLResponse *urlResponse;
-    NSError *urlError;
+    NSURLResponse *urlResponse;    NSError *urlError;
     NSError *jsonError;
     
     NSData *urlData = [NSURLConnection sendSynchronousRequest:urlrequest returningResponse:&urlResponse error:&urlError];
@@ -34,4 +39,11 @@
     return profileDIctionary;
 }
 
++ (NSURLRequest *)URLRequestWithURL:(NSString *)url {
+    NSMutableURLRequest *urlrequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
+    [urlrequest setValue:AJBBearerHeaderField forHTTPHeaderField:AJBBearerHeaderKey];
+    [urlrequest setValue:AJBTokenHeaderField forHTTPHeaderField:AJBTokenHeaderKey];
+    
+    return urlrequest;
+}
 @end

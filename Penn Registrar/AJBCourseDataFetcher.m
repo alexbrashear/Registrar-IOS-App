@@ -13,12 +13,6 @@
 #import "AJBDepartment.h"
 #import "AJBCourse.h"
 
-NSString * const AJBBearerHeaderKey = @"Authorization-Bearer";
-NSString * const AJBTokenHeaderKey = @"Authorization-Token";
-
-NSString * const AJBBearerHeaderField = @"UPENN_OD_emud_1000683";
-NSString * const AJBTokenHeaderField = @"1vkd6m32bo1polkdfup713dmte";
-
 NSString * const AJBResultDataKey = @"result_data";
 
 NSString * const AJBCourseSectionSearchParametersURL = @"https://esb.isc-seo.upenn.edu/8091/open_data/course_section_search_parameters/";
@@ -28,9 +22,7 @@ NSString * const AJBPageNumber = @"/?page_number=";
 @implementation AJBCourseDataFetcher
 
 + (void)retrieveDepartmentData {
-    NSMutableURLRequest *urlrequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:AJBCourseSectionSearchParametersURL]];
-    [urlrequest setValue:AJBBearerHeaderField forHTTPHeaderField:AJBBearerHeaderKey];
-    [urlrequest setValue:AJBTokenHeaderField forHTTPHeaderField:AJBTokenHeaderKey];
+    NSURLRequest *urlrequest = [AJBWebRequestManager URLRequestWithURL:AJBCourseSectionSearchParametersURL];
     
     [AJBWebRequestManager retrieveDataWithAsyncURLRequest:urlrequest AndCompletion:^(NSDictionary *profileDictionary) {
         AJBAPIMap *apiMap = [[AJBAPIMap alloc] initWithDictionary:[[profileDictionary objectForKey:AJBResultDataKey] lastObject]];
@@ -63,19 +55,24 @@ NSString * const AJBPageNumber = @"/?page_number=";
 }
 
 + (void)retrieveCourseDataFromDepartment:(NSArray *)departments {
-    NSInteger pageNumber = 10;
-    
     for (NSString *department in departments) {
-        while (YES) {
-            NSString *url = [NSString stringWithFormat:@"%@%@%@%d", AJBCourseCatalogURL, department, AJBPageNumber, pageNumber];
+        // get first page to retrieve service meta data
+        NSString *url = [NSString stringWithFormat:@"%@%@%@%d", AJBCourseCatalogURL, department, AJBPageNumber, 1];
+        NSURLRequest *urlrequest = [AJBWebRequestManager URLRequestWithURL:url];
+
+        NSDictionary *serviceMetaDictionary = [[AJBWebRequestManager retrieveDictionaryWithSynchronousRequest:urlrequest] objectForKey:@"service_meta"];
+        NSInteger numPages = [[serviceMetaDictionary objectForKey:@"number_of_pages"] integerValue];
+        NSInteger currentPage = 1;
+        
+        while (currentPage <= numPages) {
+            NSString *url = [NSString stringWithFormat:@"%@%@%@%d", AJBCourseCatalogURL, department, AJBPageNumber, currentPage];
             
-            NSMutableURLRequest *urlrequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
-            [urlrequest setValue:AJBBearerHeaderField forHTTPHeaderField:AJBBearerHeaderKey];
-            [urlrequest setValue:AJBTokenHeaderField forHTTPHeaderField:AJBTokenHeaderKey];
+            NSURLRequest *urlrequest = [AJBWebRequestManager URLRequestWithURL:url];
             
             [AJBWebRequestManager retrieveDataWithAsyncURLRequest:urlrequest AndCompletion:^(NSDictionary *profileDictionary){
                 NSLog(@"asdfasdf");
             }];
+            currentPage = currentPage + 1;
         }
     }
 }

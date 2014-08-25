@@ -12,5 +12,9 @@
 
 + (void)retrieveDataWithAsyncURLRequest:(NSURLRequest *)urlrequest AndCompletion:(void (^) (NSDictionary *))block;
 
++ (NSDictionary *)retrieveDictionaryWithSynchronousRequest:(NSURLRequest *)urlrequest;
+
++ (NSURLRequest *)URLRequestWithURL:(NSString *)url;
+
 
 @end
